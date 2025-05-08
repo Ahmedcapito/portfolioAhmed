@@ -1,11 +1,10 @@
 'use client';
 import React from "react";
-import { motion } from "framer-motion"; // استيراد Framer Motion
+import { motion } from "framer-motion"; 
 
 const About = () => {
   return (
     <div className="text-center w-full mt-8 mx-auto px-4 sm:px-6 md:px-8">
-      {/* حركة على العنوان */}
       <motion.h1
         className="text-4xl font-bold text-blue-950 sm:text-5xl lg:text-6xl"
         initial={{ opacity: 0, y: -20 }}
@@ -17,7 +16,7 @@ const About = () => {
       
       <hr className="w-24 mx-auto mt-5 mb-5" />
       
-      {/* حركة على النص */}
+    
       <motion.p
         className="text-lg font-medium text-gray-700 sm:text-xl md:text-2xl"
         initial={{ opacity: 0, y: 20 }}

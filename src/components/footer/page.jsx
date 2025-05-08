@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="relative mb-100">
-      <div className="bg-gray-100 w-full text-center flex justify-center p-8 fixed bottom-0 right-0 left-0">
+    <div >
+      <div className="bg-gray-100 w-full text-center flex justify-center p-8">
         <div>
           <ul className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-10 text-xl font-bold capitalize text-gray-800">
             <li>

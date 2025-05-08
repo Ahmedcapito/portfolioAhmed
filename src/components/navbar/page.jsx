@@ -11,7 +11,7 @@ const Navbar = () => {
       <nav className="flex items-center justify-between p-6 lg:px-8 fixed top-0 right-0 left-0 bg-white z-50 shadow" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <h3 className="font-bold text-2xl text-blue-400 dark:text-sky-900">El-Emam</h3>
+            <h3 className="font-bold text-2xl text-blue-950">El-Emam</h3>
           </Link>
         </div>
 

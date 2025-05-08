@@ -50,13 +50,13 @@ const Hero = () => {
             transition={{ delay: 0.8, duration: 0.5 }}
             className="mt-10 flex items-center justify-center gap-x-6"
           >
-            <Link
-              href="/public/AhmedCV.pdf"
+            <a
+              href="/AhmedCV.pdf"
               download
               className="rounded-md bg-indigo-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Download CV
-            </Link>
+            </a>
           </motion.div>
         </div>
       </div>
