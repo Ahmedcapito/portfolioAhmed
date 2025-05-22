@@ -55,4 +55,11 @@ export const dataProjects = [
     github: 'https://github.com/Ahmedcapito/capito.git',
     view: 'https://ahmedcapito.github.io/capito/'
   },
+  {
+    id: 4,
+    title: "Next js",
+    desc: "Mark Foodie is a modern and interactive restaurant website that delivers a fast and stylish user experience. Built with Next.js and styled using Tailwind CSS, it features smooth animations powered by Framer Motion, The app uses static JSON data to display meals across categories like breakfast, lunch, and dinner, and includes a powerful search feature for quick access. All data is intelligently structured and integrated to ensure users can easily find any meal they’re looking for, with dynamic filtering and instant results, It utilizes React Hooks like useState and useEffect to manage state and logic, and effectively handles responses to update and display content dynamically.EmailJS is integrated for contact form functionality, and a few lightweight Material UI components are used to enhance specific UI elements.👉 The entire user interface (UI) was designed by me using Figma, with a focus on simplicity, clarity, and modern aesthetics.",
+    github: 'https://github.com/Ahmedcapito/Mark-Foodie.git',
+    view: 'https://ahmedcapito.github.io/Mark-Foodie/'
+  },
 ];

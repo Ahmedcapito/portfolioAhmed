@@ -4,14 +4,21 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [lang , setLang] = useState('en');
 
+  const r = {
+    logo : lang === 'ar' ? 'الامام' : 'Elemam',
+    link_contactUs : lang === 'ar' ? 'تواصل معي' : 'ContactUs',
+    link_project : lang === 'ar' ? 'المشاريع' : 'projects',
+    link_About : lang === 'ar' ? 'الصفحه الرئيسيه' : 'about'
+  }
   return (
-    <header className="relative">
+    <header className={`relative ${lang === 'ar' ? 'text-right' : 'text-left'}`} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
       <nav className="flex items-center justify-between p-6 lg:px-8 fixed top-0 right-0 left-0 bg-white z-50 shadow" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <h3 className="font-bold text-2xl text-blue-950">El-Emam</h3>
+            <h3 className="font-bold text-2xl text-blue-950">{r.logo}</h3>
           </Link>
         </div>
 
@@ -40,14 +47,17 @@ const Navbar = () => {
 
         <div className="hidden lg:flex lg:gap-x-12">
           <Link href="/" className="text-base font-semibold text-gray-900">
-            About
+            {r.link_About}
           </Link>
           <Link href="/projects" className="text-base font-semibold text-gray-900">
-            projects
+            {r.link_project}
           </Link>
           <Link href="/contact" className="text-base font-semibold text-gray-900">
-            Contact
+            {r.link_contactUs}
           </Link>
+          <button className='font-bold cursor-pointer' onClick={()=> setLang(lang === 'en' ? 'ar' : 'en')}>
+            {lang === 'en' ? 'العربية' : 'English'} 
+          </button>
         </div>
       </nav>
 
@@ -59,14 +69,17 @@ const Navbar = () => {
           transition={{ duration: 0.3 }}
         >
           <Link href="/" className="block text-base font-semibold text-gray-900" onClick={() => setIsMenuOpen(false)}>
-            About
+            {r.link_About}
           </Link>
           <Link href="/projects" className="block text-base font-semibold text-gray-900" onClick={() => setIsMenuOpen(false)}>
-            projects
+            {r.link_project}
           </Link>
           <Link href="/contact" className="block text-base font-semibold text-gray-900" onClick={() => setIsMenuOpen(false)}>
-            Contact
+            {r.link_contactUs}
           </Link>
+          <button className='font-bold cursor-pointer' onClick={()=> setLang(lang === 'en' ? 'ar' : 'en')}>
+            {lang === 'en' ? 'العربية' : 'English'} 
+          </button>
         </motion.div>
       )}
     </header>
